@@ -5,7 +5,7 @@ const cardList = [
 ];
 
 function getCards () {
-  return cardList.map((item) => <Card title={item} />)
+  return cardList.map((item) => <Card title={item} key={item} />)
 }
 function App () {
   return (
