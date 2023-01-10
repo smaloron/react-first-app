@@ -15,8 +15,14 @@ export default function WindowApp () {
 
     const [open, setOpen] = useState(false)
 
+
     function openHandler () {
-        setOpen(!open);
+        console.log(open)
+        setOpen(() => {
+            const newOpen = !open;
+            console.log(newOpen);
+            return newOpen;
+        });
     }
 
     return (
